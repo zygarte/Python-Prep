@@ -7,6 +7,8 @@
 
 # In[7]:
 
+a = 1
+print(a)
 
 
 
@@ -14,7 +16,7 @@
 
 # In[3]:
 
-
+print(type(8.5))
 
 
 
@@ -23,13 +25,14 @@
 # In[8]:
 
 
-
+print(type(a))
 
 
 # 4) Crear una variable que contenga tu nombre
 
 # In[2]:
 
+mi_nombre = 'William Lozano'
 
 
 
@@ -38,14 +41,14 @@
 # In[3]:
 
 
-
+n_complejo = 1 + 1j
 
 
 # 6) Mostrar el tipo de dato de la variable crada en el punto 5
 
 # In[4]:
 
-
+print(type(n_complejo))
 
 
 
@@ -61,7 +64,8 @@ pi = 3.1416
 
 # In[3]:
 
-
+var_1 = 'True'
+var_2 = True
 
 
 
@@ -70,7 +74,7 @@ pi = 3.1416
 # In[5]:
 
 
-
+print('La variable 1 es de tipo ', type(var_1), ' y la variable 2 es de tipo ', type(var_2))
 
 
 # 10) Asignar a una variable, la suma de un número entero y otro decimal
@@ -78,14 +82,16 @@ pi = 3.1416
 # In[1]:
 
 
-
+a = 5.2 + 4
 
 
 # 11) Realizar una operación de suma de números complejos
 
 # In[2]:
 
-
+a = 3 + 1j
+b = 1 + 3j
+print(a + b)
 
 
 
@@ -93,7 +99,8 @@ pi = 3.1416
 
 # In[4]:
 
-
+c = a + 1.1
+print(c)
 
 
 
@@ -102,14 +109,14 @@ pi = 3.1416
 # In[5]:
 
 
-
+print(3 * 0)
 
 
 # 14) Mostrar el resultado de elevar 2 a la octava potencia
 
 # In[6]:
 
-
+print(2**8)
 
 
 # 15) Obtener el cociente de la división de 27 entre 4 en una variable y luego mostrarla
@@ -117,7 +124,8 @@ pi = 3.1416
 # In[8]:
 
 
-
+a = 27 / 4
+print(a)
 
 
 # 16) De la división anterior solamente mostrar la parte entera
@@ -126,6 +134,7 @@ pi = 3.1416
 
 
 
+print(27 // 4)
 
 
 # 17) De la división de 27 entre 4 mostrar solamente el resto
@@ -134,6 +143,7 @@ pi = 3.1416
 
 
 
+print(27 % 4)
 
 
 # 18) Utilizando como operandos el número 4 y los resultados obtenidos en los puntos 16 y 17. Obtener 27 como resultado
@@ -141,14 +151,16 @@ pi = 3.1416
 # In[2]:
 
 
-
+(27//4)*4+(27%4)
 
 
 # 19) Utilizar el operador "+" en una operación donde intervengan solo variables alfanuméricas
 
 # In[3]:
 
-
+var1 = '1 '
+var2 = '2'
+print(var1 + var2)
 
 
 
@@ -157,14 +169,14 @@ pi = 3.1416
 # In[4]:
 
 
-
+2 == '2'
 
 
 # 21) Utilizar las funciones de cambio de tipo de dato, para que la validación del punto 20 resulte verdadera
 
 # In[11]:
 
-
+2 == int('2')
 
 
 
@@ -172,7 +184,7 @@ pi = 3.1416
 
 # In[12]:
 
-
+a = float('3,8') #flotante usa punto como separador
 
 
 
@@ -180,7 +192,9 @@ pi = 3.1416
 
 # In[15]:
 
-
+a = 3
+a -= 1
+print(a)
 
 
 
@@ -189,7 +203,7 @@ pi = 3.1416
 # In[29]:
 
 
-
+1 << 2 #resultado desde el punto de vista binario
 
 
 # 25) Realizar la operación 2 + '2' ¿Por qué no está permitido? ¿Si los dos operandos serían del mismo tipo, siempre arrojaría el mismo resultado?
@@ -197,13 +211,21 @@ pi = 3.1416
 # In[23]:
 
 
+2 + '2' # sin casting, no es posible
 
-
-
-
+# In[24]:
+float(2) + float('2')
+# In[25]:
+int(2) + int('2')
+# In[26]:
+str(2) + str('2')
 # 26) Realizar una operación válida entre valores de tipo entero y string
 
 # In[30]:
 
+
+var1 = 'este texto se repite '
+var2 = 3
+print(var1 * var2 + str(var2) + ' veces')
 
 
